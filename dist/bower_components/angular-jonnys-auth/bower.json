@@ -1,0 +1,23 @@
+{
+  "name": "angular-jonnys-auth",
+  "version": "0.0.0",
+  "authors": [
+    "joropeza <joropeza@gmail.com>"
+  ],
+  "description": "frontend auth for angularJs",
+  "main": "app.js",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0"
+  }
+}
