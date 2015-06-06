@@ -3,13 +3,16 @@ var bcrypt = require('bcrypt');
 var Schema = mongoose.Schema;
 
 var pointSchema = new Schema({
-    firstname: { type: String, required: true },
-    lastname: { type: String, required: true },
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-    profile: {} // for extra information you may / may not want
+    longitude: { type: String, required: true },
+    latitude: { type: String, required: true },
+    accuracy: { type: Number, required: true },
+    altitude: { type: Number, required: false },
+	altitudeAccuracy: { type: Number, required: false },
+	heading: {type: Number, required: false},
+	speed: {type: Number, required: false},
+	timestamp: { type: Date, default: Date.now}
 });
 
-var Point = mongoose.model('User', pointSchema);
+var Point = mongoose.model('Point', pointSchema);
 
 module.exports = Point;
